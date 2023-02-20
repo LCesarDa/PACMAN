@@ -39,8 +39,14 @@ namespace PACMAN
         PictureBox playerBox, RGBox, PGBox, BGBox, OGBox;
         Boolean InitR, InitP, InitB, InitO;
         static byte[,] actualMap, actualCoin;
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
         Boolean up = false, down = false, left = false, right = false;
-        int score = 0, count1 = 318, count2 = 0, count3 = 0;
+        int score = 0, count1 = 0, count2 = 0, count3 = 0;
         private void timer4_Tick(object sender, EventArgs e)
         {
             if (InitR == false)
